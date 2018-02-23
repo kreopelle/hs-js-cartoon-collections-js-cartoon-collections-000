@@ -30,23 +30,21 @@ function longPlaneteerCalls(words) {
 function findTheCheese (foods) {
   var cheeseFound = false;
   while (cheeseFound === false) {
-    var i = 0;
-    while (i < foods.length) {
-      if (foods[i].includes("cheddar")){
-        cheeseFound = true;
-        return "cheddar";
-      } else if (foods[i].includes("gouda")){
-        cheeseFound = true;
-        return "gouda";
-      } else if (foods[i].includes("camembert")){
-        cheeseFound = true;
-        return "camembert";
-      } else {
-        i++;
-      }
-    }
+  for (var i = 0; i < foods.length; i++) {
+  if (foods.includes("gouda")) {
     cheeseFound = true;
-    return "no cheese!";
-  }
+    return "gouda";
+  } else if (foods.includes("camembert")) {
+    cheeseFound = true;
+    return "camembert";
+  } else if (foods.includes("cheddar")) {
+    cheeseFound = true;
+    return "cheddar";
+  } else { 
+    cheeseFound = true;
+    return "no cheese!"
+}
+}
+}
 }
 
