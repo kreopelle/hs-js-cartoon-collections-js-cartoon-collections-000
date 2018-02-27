@@ -2,8 +2,8 @@ function dwarfRollCall(dwarves) {
   var newString = "";
   var number = 0;
   for (var i = 0; i < dwarves.length; i++) {
-    number+=1
-    newString = `${newString}${number}. ${dwarves[i]} `
+    number+=1;
+    newString = `${newString}${number}. ${dwarves[i]} `;
   }
   return newString;
 }
@@ -17,13 +17,13 @@ function summonCaptainPlanet(planeteerCalls){
 }
 
 function longPlaneteerCalls(words) {
-  for (var i = 0; i < words.length; i++) {
+  var aLongCall = false;
+   for (var i = 0; i < words.length; i++) {
     if (words[i].length > 4) {
-      return true;
-    } else {
-      return false;
+      aLongCall = true;
     }
   }
+  return aLongCall;
 }
 
 
@@ -42,9 +42,8 @@ function findTheCheese (foods) {
     return "cheddar";
   } else { 
     cheeseFound = true;
-    return "no cheese!"
+    return "no cheese!";
 }
 }
 }
 }
-
