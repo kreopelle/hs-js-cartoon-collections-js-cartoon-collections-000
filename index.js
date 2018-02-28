@@ -1,7 +1,7 @@
 function dwarfRollCall(dwarves) {
   var newString = "";
   var number = 0;
-  for (var i = 0; i < dwarves.length; i++) {
+  for (var i = (dwarves.length/2); i < dwarves.length; i++) {
     number+=1;
     newString = `${newString}${number}. ${dwarves[i]} `;
   }
@@ -40,10 +40,48 @@ function findTheCheese (foods) {
   } else if (foods.includes("cheddar")) {
     cheeseFound = true;
     return "cheddar";
+  } else if (foods.includes("swiss")) {
+    cheeseFound = true;
+    return "swiss";
   } else { 
     cheeseFound = true;
     return "no cheese!";
 }
 }
+<<<<<<< HEAD
 }
 }
+
+
+function wordsWithB(words) {
+  var newArray = [];
+  for (var i = 0; i < words.length; i++) {
+    if (words[i].startsWith("b")) {
+      newArray.unshift(words[i]);
+    }
+  }
+  return newArray;
+}
+
+
+
+
+=======
+
+    for (var i = 0; i < foods.length; i++) {
+      if (foods[i].includes("cheddar")){
+        cheeseFound = true;
+        return "cheddar";
+      } else if (foods[i].includes("gouda")){
+        cheeseFound = true;
+        return "gouda";
+      } else if (foods[i].includes("camembert")){
+        return "camembert";
+      } else {
+        cheeseFound = true;
+        return "no cheese!";
+      }
+    }
+  }
+
+>>>>>>> 40330b943bd57a7aa270d7058b765977c93d3500
